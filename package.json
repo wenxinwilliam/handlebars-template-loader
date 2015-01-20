@@ -16,8 +16,10 @@
 		"url": "https://github.com/emaphp/handlebars-template-loader.git"
 	},
 	"dependencies": {
-		"handlebars": "^2.0.0",
 		"loader-utils": "^0.2.5"
+	},
+	"peerDependencies":{
+		"handlebars": "^2.0.0"
 	},
 	"keywords": [
 		"handlebars",

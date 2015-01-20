@@ -40,7 +40,7 @@ module.exports = function(content) {
     var callback = this.async();
     content = resolveContent(content, this.context);
     var fn = Handlebars.precompile(content);
-    callback(null, "var Handlebars = require('" + require.resolve('handlebars') + "');\n" +
+    callback(null, "var Handlebars = require('handlebars');\n" +
     "module.exports = (Handlebars[\"default\"] || Handlebars).template(" + fn + ");");
 };
 
